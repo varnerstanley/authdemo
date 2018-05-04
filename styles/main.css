@@ -3,13 +3,12 @@
 
 /* * is a wildcard referring to all elements. */
 * { margin: 0; box-sizing: border-box; }
-/*F9685D red
-  3aaee0 blue*/
+
 body {
     font-size: 16px;
     line-height: 32px;
     font-family: 'Lato', sans-serif;
-    color: /* #xxxxxx */;
+    color: #2f2f2f;
 }
 
 h1 {
@@ -36,7 +35,7 @@ header, footer, footer a {
 }
 
 header img {
-    width: /*  */; /* Leaving blank because the html does it */
+    width: 200px;
     height: auto;
     float: right;
 }
@@ -44,3 +43,6 @@ header img {
 footer {
     font-size: .75em;
 }
+
+/*F9685D red
+  3aaee0 blue*/
