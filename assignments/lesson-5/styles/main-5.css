@@ -93,6 +93,9 @@ main article h3 {
 article h3 {
   font-size: 1.5em;
 }
+article img {
+  width: 400px;
+}
 footer {
    width: 100%;
    background-color: #ADD8E6;
