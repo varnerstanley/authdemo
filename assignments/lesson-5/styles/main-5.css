@@ -1,0 +1,112 @@
+/* Delete these CSS comments after reading. */
+/* This main css file contains the default rules and is geared toward the small/phone view */
+
+* { box-sizing: border-box;}  /* This wildcard applies to all elements ensuring a box layout model */
+
+body {
+  font-size: 16px;
+  font-family: sans-serif; /* Declare the base font-family */
+}
+
+header, nav, main, footer { /* the comma between the selectors means apply the following CSS declarations to all of the listed elements */
+  max-width: 1500px; /* Declare the maximum width and other main element rules to limit the stretch on larger/wider views */
+  margin: 0 auto;
+}
+
+header { float; left: }
+header h1 {
+  font-size: 2em;
+  margin: 0 auto;
+}
+/*header figure {
+  position: relative;
+}*/
+header .suncloud-icon {
+  max-width: 100px;
+  display: inline;
+}
+.header-img {
+  width: 100%
+}
+header .subheading {}
+
+nav {}
+nav button {}
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #ADD8E6;
+}
+nav ul li {
+  float: left;
+}
+
+nav ul li a {
+  display: block;
+  color: #333;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+nav ul li.active a {
+  background-color: #4CAF50;
+  color: white;
+}
+nav ul li a:hover { background-color: #fff;
+}
+
+main {}
+main h2 {
+  text-align: center;
+  color: #0496FF;
+}
+main figure {
+  margin: 0 0 .2rem 2%;
+  width: 96%;
+}
+main figure img {
+  float: left;
+}
+
+main .weather-summary {
+  text-align: center;
+}
+main picture {
+  float: left;
+  margin-left: 50px;
+}
+
+.sunny-image {
+  max-width: 100px;
+}
+
+.forecast {
+  display: none;
+}
+
+main article h3 {
+  text-align: center;
+}
+
+article h3 {
+  font-size: 1.5em;
+}
+footer {
+   width: 100%;
+   background-color: #ADD8E6;
+   color: #333;
+   text-align: center;
+   padding-top: 5px;
+   line-height: .25em;
+}
+footer .footer-bar {
+  background-color: #006BA6;
+  line-height: 2em;
+  color: #fff;
+  padding: 5px;
+}
+footer h2 {
+  font-weight: bold;
+}
