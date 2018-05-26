@@ -68,6 +68,7 @@ main figure {
 }
 main figure img {
   float: left;
+  margin-bottom: 20px;
 }
 
 main .weather-summary {
