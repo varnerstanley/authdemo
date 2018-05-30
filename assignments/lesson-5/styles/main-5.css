@@ -30,34 +30,48 @@ header .suncloud-icon {
 }
 header .subheading {}
 
-nav {}
-nav button {}
+nav {
+  background-color: #0496FF;
+  font-family: Verdana, sans-serif;
+}
+nav button {
+  margin: .2rem 2%;
+  background-color: transparent;
+  border: none;
+  font-size: 1.6rem;
+  color: #fff;
+}
 nav ul {
   list-style-type: none;
-  margin: 0;
   padding: 0;
+  margin: 0;
   overflow: hidden;
-  background-color: #0496FF;
-}
-nav ul li {
-  float: left;
 }
 
 nav ul li a {
   display: block;
+  padding: .8rem 2%;
   color: #fff;
-  text-align: center;
-  padding: 14px 16px;
+  /*text-align: center;
+  padding: 14px 16px;*/
   text-decoration: none;
+  border-top: 1px solid rgba(0, 0, 0, 0.2);
+
 }
-nav ul li.active a {
-  background-color: #4CAF50;
-  color: white;
-}
+
 nav ul li a:hover {
   background-color: #fff;
   color: #333;
 }
+
+nav ul.hide {
+  display: none;
+}
+
+/*nav ul li.active a {
+  background-color: rgba(0, 0, 0, 0.2);
+  color: white;
+}*/
 
 main {}
 main h2 {
@@ -115,4 +129,11 @@ footer .footer-bar {
 }
 footer h2 {
   font-weight: bold;
+}
+
+/*----- Clearfix: Force an Element not to collapse -----*/
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
 }
