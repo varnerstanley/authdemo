@@ -1,4 +1,4 @@
-@media only screen and (min-width: 64em) {
+@media only screen and (min-width: 64rem) {
 
   header h1 {
     font-size: 3em;
@@ -12,6 +12,7 @@
     width: 1500px;
     max-height: 350px;
   }
+
 
   nav button { display:none; }
 
