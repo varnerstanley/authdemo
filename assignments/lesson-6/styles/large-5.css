@@ -54,8 +54,11 @@
   article h3 {
     font-size: 2em;
   }
-  article img {
-    width: 500px;
-    margin: 5px;
+  article figure.franklin-downtown {
+    width: 100%;
   }
+  article figure img {
+    width: 50%;
+  }
+  
 }

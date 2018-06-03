@@ -45,7 +45,10 @@
         background-color: gray;
         color: white;
     }
-
+    article {
+      display: inline;
+      /*flex-flow: row;*/
+    }
     article h3 {
       font-size: 1.75em;
     }
@@ -53,9 +56,12 @@
     main article .town-article {
       float: left;
       width: 50%;
-      padding: 10px;
+      
     }
-    article img {
-      margin: 5px;
+    article figure.franklin-downtown {
+      width: 100%;
+    }
+    article figure img {
+      width: 50%;
     }
   }
