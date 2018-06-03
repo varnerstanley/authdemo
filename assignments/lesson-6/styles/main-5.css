@@ -33,7 +33,7 @@ header .subheading {
 }
 
 /*header figure.logo {
-  float: inherit;
+  float: left;
 }*/
 nav {
   background-color: #0496FF;
