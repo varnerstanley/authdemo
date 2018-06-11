@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <SCRIPT LANGUAGE="JavaScript">
+
+      function windChill(form) {
+      wind=eval(form.wind.value);
+      temp=eval(form.temp.value);
+      chill=(0.0817*(3.71*(Math.pow(wind, 0.5))+
+      5.81-0.25*wind)*(temp-91.4)+91.4);
+      form.windchill.value = chill;
+      }
+    
+      var chillFactor =   35.74 + (0.6215 * avgTemp) - (35.75 * power) + (0.4275 * avgTemp * power);
+    </script>
+
+
+  </head>
+  <body>
+    <form action="" method=post name=windform>
+      <center>
+      <table border=1 cellpadding=3 cellspacing=0 width="250">
+      <tr>
+      <td align=center>
+      Wind Speed (MPH) =
+      </td>
+      <td align=center>
+      <input type=text name=wind value="" size=6>
+      </td>
+      </tr>
+      <tr>
+      <td align=center>
+      Air Temperature (ºF) =
+      </td>
+      <td align=center>
+      <input type=text name=temp value="" size=6>
+      </td>
+      </tr>
+      <tr>
+      <td colspan=2 align=center>
+      <br>
+      <input type=button value="Calculate Wind Chill" onclick="windChill(this.form)">
+      <p>
+      <input name=windchill type=text value="" size=10> º F
+      </td>
+      <tr>
+      </table>
+      </center>
+      </form>
+  </body>
+</html>

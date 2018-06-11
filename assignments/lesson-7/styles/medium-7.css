@@ -1,0 +1,100 @@
+@media only screen and (min-width: 37.5em) {
+
+    /* Only CSS write declarations that need to be changed. Do not duplicated declarations that are already established in the main.css */
+
+      /* hamburger button does not need to be shown in the medium on up views */
+
+    section.forecast {
+      display: inline-flex;
+      width: 100%;
+      }  /* show the 10-day forecast with the medium view and up */
+
+
+    header h1 {
+      font-size: 2.5em;
+      margin: 0 auto;
+    }
+    header .subheading {
+
+    }
+    header .suncloud-icon {
+      max-width: 150px;
+    }
+    .header-img {
+      width: 500px;
+    }
+    nav button {display: none;}
+    nav ul {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+
+    nav ul.hide {
+        display: flex;
+    }
+
+    nav ul li {
+        flex: 1 1 100%;
+    }
+
+     nav ul li a{
+        font-size: 1.3rem;
+        border-top: none;
+        border-right: 1px solid rgba(0, 0, 0, 0.3);
+        padding: .8rem 1rem;
+    }
+    .sunny-image {
+      max-width: 100px;
+    }
+    .weather-summary {
+      display: flex;
+    }
+    main figure img {
+      float: left;
+      margin-bottom: 20px;
+    }
+    table {
+      border-collapse: collapse;
+      width: 100%;
+    }
+
+    th, td {
+        border: 1px solid #ddd;
+        text-align: center;
+        padding: 8px;
+    }
+
+    tr:nth-child(even){background-color: #f2f2f2}
+
+    th {
+        background-color: gray;
+        color: white;
+    }
+    article {
+      display: inline;
+      /*flex-flow: row;*/
+    }
+    article h3 {
+      font-size: 1.75em;
+    }
+
+    main article .town-article {
+      float: left;
+      width: 50%;
+
+    }
+    article figure.franklin-downtown {
+      width: 100%;
+    }
+    article figure img {
+      width: 50%;
+    }
+
+    .image-grid {
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 1rem;
+        margin: .8rem auto;
+    }
+  }
