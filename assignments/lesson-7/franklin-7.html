@@ -103,27 +103,27 @@
       </figure>
     </article>
 
-    <form action="" method=post name=windform>
+    <form action="" method="post" name="windform">
       <center>
-      <table border=1 cellpadding=3 cellspacing=0 width="250">
+      <table class="windchill">
         <tr>
-          <td align=center> Wind Speed (MPH) = </td>
-            <td align=center>
-              <input type=text name=wind size=6>
+          <td> Wind Speed (MPH) = </td>
+            <td>
+              <input type=text name="wind" size="6">
             </td>
         </tr>
             <tr>
-              <td align=center> Air Temperature (&#176;F) = </td>
-            <td align=center>
+              <td> Air Temperature (&#176;F) = </td>
+            <td>
               <input type=text name=temp value="" size=6>
             </td>
             </tr>
             <tr>
-              <td colspan=2 align=center>
+              <td>
                 <br>
               <input type=button value="Calculate Wind Chill" onclick="windChill(this.form)">
               <p>
-              <input name=windchill type=text size=10> &#176; F
+              <input name=windchill type="text" size="10"> &#176; F
               </td>
             <tr>
         </table>
