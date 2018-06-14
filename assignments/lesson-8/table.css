@@ -4,6 +4,7 @@ table {
     width: 100%;
     background-color: #e7ffed;
     margin: 0 auto;
+    margin-top: 20px;
     width: 300px;
     box-shadow: 10px 10px 20px #628ca6;
 }
@@ -19,7 +20,7 @@ thead, tfoot {
 
 }
 th {
-  
+
   font-size: 1.5em;
 }
 
