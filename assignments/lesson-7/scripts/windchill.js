@@ -1,9 +1,7 @@
-function windChill(form) {
-  wind = eval(form.wind.value);
-  temp = eval(form.temp.value);
-
-  chill = (0.0817*(3.71*(Math.pow(wind, 0.5))+
-    5.81-0.25*wind)*(temp-91.4)+91.4);
-
-  form.windchill.value = chill;
-}
+var HighTemp = parseInt(document.getElementById("high-temp").innerHTML);
+var LowTemp = parseInt(document.getElementById("low-temp").innerHTML);
+var s = parseInt(document.getElementById("wind-speed").innerHTML);
+var t = (HighTemp + LowTemp) / 2;
+var s_pow = Math.pow(s,0.16);
+var WindChill = 35.74 + (0.6215 * t) - (35.75 * s_pow) + (0.4275 * t * s_pow);
+document.getElementById("wind-chill").innerHTML = Math.round(WindChill);
