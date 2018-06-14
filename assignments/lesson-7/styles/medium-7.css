@@ -51,10 +51,73 @@
     .weather-summary {
       display: flex;
     }
-    main figure img {
-      float: left;
-      margin-bottom: 20px;
+    main figure {
+      width: 50%;
+      margin-bottom: 1rem;
+      margin: 0 auto;
     }
+    #medium-grouping1 {
+      display: flex;
+      margin: 1rem 2% 0;
+    }
+    #medium-grouping1-sub {
+      display: flex;
+      flex-direction: column;
+      align-items: stretch;
+      flex: 1 1 50%;
+    }
+    main picture {
+      margin: 0 auto;
+    }
+    .town-header {
+      margin: 0 0 0 2%;
+    }
+    .weather-summary {
+      margin: 2% 0 1rem 2%;
+
+    }
+    .weather-summary img {
+      border-radius: 50%;
+      margin: 0.5rem 0;
+    }
+    /*.weather-summary h3 {
+      margin: 0;
+      padding: 0.3em;
+    }*/
+
+    .current {
+        flex-direction: row-reverse;
+        justify-content: center;
+        padding: 0;
+        margin-left: 40px;
+    }
+
+    .current img {
+        width: 70%;
+    }
+    #cur-state {
+      margin: 5% 20% 0 0;
+      font-size: 1.5em;
+    }
+    .highlow {
+        width: 45%;
+        font-size: 1rem;
+        margin-left: 55%;
+
+    }
+    .cur-temp{
+      margin: 0.3rem 0;
+    }
+
+    .conditions {
+        width: 55%;
+        font-size: 1rem;
+        margin-left:45%;
+    }
+
+
+
+
     table {
       border-collapse: collapse;
       width: 100%;
