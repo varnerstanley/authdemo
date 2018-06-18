@@ -61,6 +61,10 @@ form input.submit {
   text-align: center;
   padding: 40px;
 }
+form .sbs {
+  display: block;
+  padding: 5px;
+}
 #thankyou {
   font-size: 3em;
   color: #0496FF;
