@@ -1,0 +1,59 @@
+@media only screen and (min-width: 64rem) {
+
+  header h1 {
+    font-size: 3em;
+    display: flex;
+    margin: 0 auto;
+  }
+  header .suncloud-icon {
+    max-width: 150px;
+  }
+
+  nav ul li a {
+    padding: .6rem 1rem;
+  }
+  main figure {
+    margin: 0;
+    width: 100%;
+  }
+  main figure img.header-img {
+    width: 100%;
+    margin: 0;
+    max-height: 350px;
+  }
+  main .weather-summary {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  main h2 {
+    margin: 0;
+  }
+  main h3 {
+    text-align: left;
+  }
+  main .conditions {
+    text-align: right;
+    margin-right: 20px;
+  }
+
+  article h3 {
+    font-size: 2em;
+  }
+  article figure.franklin-downtown {
+    width: 100%;
+  }
+  article figure img {
+    width: 50%;
+  }
+
+  .image-grid {
+        grid-template-columns: 1fr 1fr 1fr;
+        margin: 1.25rem auto;
+    }
+
+    .image-grid figure:hover {
+       box-shadow: 0.5rem 0.5rem 2rem rgba(0,0,0,0.5);
+    }
+
+}
