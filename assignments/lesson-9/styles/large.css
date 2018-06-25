@@ -63,8 +63,7 @@
         padding-bottom: 10px;
     }
 
-    .frank-town img,
-    .green-town  img {
+    .frank-town img, .green-town  img {
         width: 100%;
         float: right;
     }
@@ -83,14 +82,6 @@
     .green-town {
       margin-bottom: 0px;
     }
-    .frank-town p,
-    .frank-town h1,
-    .towns-s p,
-    .towns-s h1,
-    .green-town p,
-    .green-town h1 {
-        text-align: center;
-        font-weight: bold;
-    }
+
 
 }
