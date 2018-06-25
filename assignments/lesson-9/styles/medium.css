@@ -103,17 +103,17 @@
 
     .home-weatherstory {
       display: flex;
-      border-style: none;
       justify-content: space-between;
       height: 23rem;
     }
     .news-story {
       width: 49.25%;
       overflow: overlay;
+      height: 21rem;
     }
     .img-container {
       width: 49.25%;
-      height: 19rem;
+      /*height: 19rem;*/
 
     }
     .mainStory-img {
@@ -137,13 +137,7 @@
         margin-right: 10px;
     }
 
-    .frank-town p,
-    .frank-town h1,
-    .spring-town p,
-    .spring-town h1,
-    .green-town p,
-    .green-town h1 {
-        margin-top: -5px;
+    .towns h1, p {
         text-align: center;
         font-weight: bold;
     }
