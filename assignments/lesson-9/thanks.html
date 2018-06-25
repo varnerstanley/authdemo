@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Franklin Weather Hub. The best source to get your local weather 24/7. Updated weather all day long.">
+  <link href="https://fonts.googleapis.com/css?family=Lato|Roboto" rel="stylesheet">
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/main.css">
+  <link rel="stylesheet" href="styles/medium.css">
+  <link rel="stylesheet" href="styles/large.css">
+  <link rel="stylesheet" href="styles/form.css">
+
+  <title>Franklin Weather</title>
+</head>
+<body>
+
+  <header>
+    <figure class="logo">
+      <img src="images/suncloud.png" class="suncloud-icon" alt="Sun and Cloud">
+    </figure>
+    <h1 class="page-title">Tri City Weather Hub</h1>
+    <div class="subheading">Your trusted source for local and national weather</div>
+
+  <nav class="clearfix">
+    <button onclick="toggleMenu()">&#9776;</button>
+    <ul class="topnav hide" id="primarynav">
+    	<li><a href="#">Home</a></li>
+    	<li class="active"><a href="franklin.html">Franklin</a></li>
+    	<li><a href="#">Greenville</a></li>
+    	<li><a href="#">Springfield</a></li>
+    	<li><a href="stormcenter.html">Storm Center</a></li>
+    	<li><a href="gallery.html">Gallery</a></li>
+    </ul>
+  </nav>
+  </header>
+
+  <main>
+      <div class="thankyou-container">
+          <h1 id="thankyou">Thank you for submiting your feedback!</h1>
+          <p id="sub-thanks">We appreciate your time to update us.</p>
+      </div>
+
+
+  </main>
+
+        <footer>
+          <section class="contact">
+            <h2>Tri City Weather Hub</h2>
+            <p>Contact information placeholder</p>
+            <p>999.999.9999</p>
+            <p>123 Main St. Anytown, US 99999</p>
+            <p>Google Map</p>
+          </section>
+          <section class="footer-bar">&copy;2018 | All Rights Reserved | Tri City Weather Hub | <span id="currentdate"></span><span id="spanDate"></span>
+          </section>
+        </footer>
+
+      <script src="scripts/hamburger.js"></script>
+      <script src="scripts/currentdate.js"></script>
+      </body>
+      </html>

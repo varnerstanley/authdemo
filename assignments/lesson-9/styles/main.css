@@ -1,0 +1,231 @@
+/* Delete these CSS comments after reading. */
+/* This main css file contains the default rules and is geared toward the small/phone view */
+
+* { box-sizing: border-box;}  /* This wildcard applies to all elements ensuring a box layout model */
+
+body {
+  font-size: 16px;
+  font-family: sans-serif; /* Declare the base font-family */
+}
+
+header, nav, main, footer { /* the comma between the selectors means apply the following CSS declarations to all of the listed elements */
+  max-width: 64rem; /* Declare the maximum width and other main element rules to limit the stretch on larger/wider views */
+  margin: 0 auto;
+}
+
+/*header { float: left; }*/
+header h1 {
+  font-size: 2em;
+  margin: 0 auto;
+}
+/*header figure {
+  position: relative;
+}*/
+header .suncloud-icon {
+  max-width: 100px;
+  display: inline-flex;
+}
+.header-img {
+  width: 100%
+}
+header .subheading {
+  margin-bottom: 2%;
+}
+
+/*header figure.logo {
+  float: left;
+}*/
+nav {
+  background-color: #0496FF;
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+}
+nav button {
+  margin: .2rem 2%;
+  background-color: transparent;
+  border: none;
+  font-size: 1.6rem;
+  color: #fff;
+}
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+}
+
+nav ul li a {
+  display: flex;
+  padding: .8rem 2%;
+  color: #fff;
+  /*text-align: center;
+  padding: 14px 16px;*/
+  text-decoration: none;
+  border-top: 1px solid rgba(0, 0, 0, 0.2);
+
+}
+
+nav ul li a:hover {
+  background-color: #fff;
+  color: #333;
+}
+
+nav ul.hide {
+  display: none;
+}
+
+/*nav ul li.active a {
+  background-color: rgba(0, 0, 0, 0.2);
+  color: white;
+}*/
+
+main {
+  font-family: 'Lato', sans-serif;
+}
+main h2 {
+  text-align: center;
+  color: #0496FF;
+  font-weight: 700;
+  margin: 0;
+}
+main figure {
+  margin: 0 0 .2rem 2%;
+  width: 96%;
+}
+
+main figure.header-img {
+  width: 100%;
+  margin: 0;
+}
+
+main .weather-summary {
+  text-align: center;
+}
+main picture {
+  float: left;
+  margin-left: 50px;
+}
+
+.sunny-image {
+  max-width: 100px;
+}
+
+.forecast {
+  display: none;
+}
+
+main article h3, p {
+  padding: 0 2% 0 2%;
+}
+main article h3 {
+  text-align: center;
+}
+
+article h3 {
+  font-size: 1.5em;
+}
+
+article img {
+  width: 100%;
+}
+footer {
+   width: 100%;
+   background-color: #5BC0EB;
+   color: #333;
+   text-align: center;
+   padding-top: 5px;
+   line-height: .25em;
+}
+footer .footer-bar {
+  background-color: #006BA6;
+  line-height: 2em;
+  color: #fff;
+  padding: 5px;
+}
+footer h2 {
+  font-weight: bold;
+}
+
+
+/*----- Clearfix: Force an Element not to collapse -----*/
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.image-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 0.8rem;
+        margin: 0.75rem auto;
+        width: 96%;
+    }
+
+    .image-grid figure {
+        margin: 0;
+        width: 100%;
+        border-radius: 10px;
+        background-color: #E6E6E6;
+    }
+
+    .image-grid figcaption {
+        text-align: center;
+        padding: 0.5rem;
+    }
+
+    .image-grid img {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+    }
+
+/*----- Homepage -----*/
+.home-weatherstory {
+  margin: 1rem 2% 1rem;
+  margin-bottom: 30px;
+
+}
+
+.news-story {
+  width: 100%;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  box-shadow: 5px 5px 20px #628ca6;
+  border-radius: 5px;
+}
+article h1 {
+  text-align: center;
+  padding: 10px;
+}
+
+.news-story img, .img-container {
+  width: 96%;
+  padding: 0;
+  margin: 1rem auto;
+  margin-left: 1rem;
+}
+article .mainStory-img {
+  display: block;
+  width: 100%;
+  margin: 0;
+}
+
+.frank-town, .spring-town, .green-town {
+    margin-top: 10px;
+    padding: 10px;
+}
+
+}
+article h1 {
+    font-family: 'Luckiest Guy', cursive;
+    font-weight: normal;
+    text-align: center;
+    color: #ff890b;
+}
+
+main figure {
+    margin: 0;
+    height: auto;
+}

@@ -1,0 +1,165 @@
+@media only screen and (min-width: 37.5em) {
+
+    /* Only CSS write declarations that need to be changed. Do not duplicated declarations that are already established in the main.css */
+
+      /* hamburger button does not need to be shown in the medium on up views */
+
+    section.forecast {
+      display: inline-flex;
+      width: 100%;
+      }  /* show the 10-day forecast with the medium view and up */
+
+
+    header h1 {
+      font-size: 2.5em;
+      margin: 0 auto;
+    }
+    header .subheading {
+
+    }
+    header .suncloud-icon {
+      max-width: 150px;
+    }
+    .header-img {
+      width: 500px;
+    }
+    nav button {display: none;}
+    nav ul {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+
+    nav ul.hide {
+        display: flex;
+    }
+
+    nav ul li {
+        flex: 1 1 100%;
+    }
+
+     nav ul li a{
+        font-size: 1.3rem;
+        border-top: none;
+        border-right: 1px solid rgba(0, 0, 0, 0.3);
+        padding: .8rem 1rem;
+    }
+    .sunny-image {
+      max-width: 100px;
+    }
+    .weather-summary {
+      display: flex;
+    }
+    main {
+      padding: 2%;
+    }
+    main figure img {
+      float: left;
+      margin-bottom: 20px;
+    }
+    table {
+      border-collapse: collapse;
+      width: 100%;
+    }
+
+    th, td {
+        border: 1px solid #ddd;
+        text-align: center;
+        padding: 8px;
+    }
+
+    tr:nth-child(even){background-color: #f2f2f2}
+
+    th {
+        background-color: gray;
+        color: white;
+    }
+    article {
+      display: inline;
+      /*flex-flow: row;*/
+    }
+    article h3 {
+      font-size: 1.75em;
+    }
+
+    main article .town-article {
+      float: left;
+      width: 50%;
+
+    }
+    article figure.franklin-downtown {
+      width: 100%;
+    }
+    article figure img {
+      width: 50%;
+    }
+
+    .image-grid {
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 1rem;
+      margin: .8rem auto;
+    }
+
+    .home-weatherstory {
+      display: flex;
+      border-style: none;
+      justify-content: space-between;
+      height: 23rem;
+    }
+    .news-story {
+      width: 49.25%;
+      overflow: overlay;
+    }
+    .img-container {
+      width: 49.25%;
+      height: 19rem;
+
+    }
+    .mainStory-img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      margin: 0;
+    }
+
+    .frank-town img,
+    .green-town  img {
+        width: 300px;
+        float: right;
+        margin-bottom: 0px;
+    }
+
+    .spring-town img {
+        width: 300px;
+        display: flex;
+        float: left;
+        margin-right: 10px;
+    }
+
+    .frank-town p,
+    .frank-town h1,
+    .spring-town p,
+    .spring-town h1,
+    .green-town p,
+    .green-town h1 {
+        margin-top: -5px;
+        text-align: center;
+        font-weight: bold;
+    }
+
+    main article {
+      padding-top: 40px;
+    }
+    .frank-town, .spring-town, .green-town {
+      border: 1px solid rgba(0, 0, 0, 0.1);
+      box-shadow: 5px 5px 20px #628ca6;
+      border-radius: 5px;
+    }
+    .green-town {
+      margin-bottom: 20px;
+    }
+    .spring-town figure img {
+      padding-top: 5px;
+    }
+  }
