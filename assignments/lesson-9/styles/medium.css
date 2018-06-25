@@ -108,7 +108,7 @@
     }
     .news-story {
       width: 49.25%;
-      overflow: overlay;
+      overflow: hidden;
       height: 22rem;
     }
     .img-container {
