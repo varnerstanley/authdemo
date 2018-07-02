@@ -235,3 +235,7 @@ main figure {
 .open-weather {
   color: #fff;
 }
+
+.town-article {
+  font-weight: normal;
+}
