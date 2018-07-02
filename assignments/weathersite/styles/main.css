@@ -23,13 +23,26 @@ header h1 {
 }*/
 header .suncloud-icon {
   max-width: 100px;
-  display: inline-flex;
+  /*display: inline-flex;*/
 }
 .header-img {
   width: 100%
 }
+
 header .subheading {
   margin-bottom: 2%;
+  display: flex;
+  flex-flow: column;
+}
+header .title-of-page {
+  display: flex;
+  flex-direction: column;
+}
+
+header .header-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
 }
 
 /*header figure.logo {
