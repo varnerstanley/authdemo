@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Franklin Weather Hub. The best source to get your local weather 24/7. Updated weather all day long.">
+  <link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/main.css">
+  <link rel="stylesheet" href="styles/medium.css">
+  <link rel="stylesheet" href="styles/large.css">
+  <title>Tri City Weather Hub</title>
+</head>
+<body>
+
+  <header>
+    <figure class="logo">
+      <img src="images/suncloud.png" class="suncloud-icon" alt="Sun and Cloud">
+    </figure>
+    <h1 class="page-title">Tri City Weather Hub</h1>
+    <div class="subheading">Your trusted source for local and national weather</div>
+
+  <nav class="clearfix">
+    <button onclick="toggleMenu()">&#9776;</button>
+    <ul class="topnav hide" id="primarynav">
+    	<li><a href="index.html">Home</a></li>
+    	<li class="active"><a href="franklin.html">Franklin</a></li>
+    	<li><a href="#">Greenville</a></li>
+    	<li><a href="#">Springfield</a></li>
+    	<li><a href="stormcenter.html">Storm Center</a></li>
+    	<li><a href="gallery.html">Gallery</a></li>
+    </ul>
+  </nav>
+  </header>
+
+  <main>
+
+    <article class="home-weatherstory clearfix">
+                <div class="news-story">
+                    <h2 id="light-h2">Lighting At Airport</h2>
+                    <p>
+                      Lorem ipsum dolor amet twee paleo salvia affogato tumeric microdosing mixtape. Meditation williamsburg fashion axe intelligentsia seitan, slow-carb fam vice waistcoat raw denim sriracha yuccie iceland. Cray semiotics iPhone forage, pour-over four loko meditation artisan vice ramps hashtag coloring book mustache craft beer. Blog post-ironic mixtape hot chicken, deep v unicorn glossier. Migas blog kale chips leggings brooklyn. Venmo pabst thundercats, migas whatever locavore etsy edison bulb brooklyn everyday carry. Beard biodiesel shoreditch stumptown raclette scenester cloud bread ennui single-origin coffee kitsch quinoa slow-carb master cleanse vice sriracha.
+                    </p>
+                </div>
+                <div class="img-container">
+                    <img class="mainStory-img" src="images/airport-bolt-bright.jpg" alt="airport and lightning">
+                </div>
+            </article>
+
+      <div class="towns">
+          <div class="frank-town">
+              <article>
+                  <figure>
+                      <img src="images/barn-clouds-countryside.jpg" alt="barn and clouds">
+                  </figure>
+                  <h3>Franklin</h3>
+                  <p>Town Motto: <span id="frank-motto"></span></p>
+                  <p>Founded: <span id="frank-found"></span></p>
+                  <p>Population: <span id="frank-pop"></span></p>
+                  <p>Average Rainfall: <span id="frank-rain"></span>"</p>
+
+              </article>
+          </div>
+
+          <div class="spring-town">
+              <article>
+                  <figure>
+                      <img src="images/beach-beautiful-clouds.jpg" alt="lightning on lake">
+                  </figure>
+                  <h3>Springfield</h3>
+                  <p>Town Motto: <span id="spring-motto"></span></p>
+                  <p>Founded: <span id="spring-found"></span></p>
+                  <p>Population: <span id="spring-pop"></span></p>
+                  <p>Average Rainfall: <span id="spring-rain"></span>"</p>
+              </article>
+          </div>
+
+          <div class="green-town">
+              <article>
+                  <figure class="img-greenville">
+                      <img src="images/clouds-lightning-silhouette.jpg" alt="clouds and lightning">
+                  </figure>
+                  <h3>Greenville</h3>
+                  <p>Town Motto: <span id="green-motto"></span></p>
+                  <p>Founded: <span id="green-found"></span></p>
+                  <p>Population: <span id="green-pop"></span></p>
+                  <p>Average Rainfall: <span id="green-rain"></span>"</p>
+              </article>
+          </div>
+      </div>
+
+  </main>
+
+  <footer>
+    <section class="contact">
+      <h2>Tri City Weather Hub</h2>
+      <p>Contact information placeholder</p>
+      <p>999.999.9999</p>
+      <p>123 Main St. Anytown, US 99999</p>
+      <p>Google Map</p>
+    </section>
+    <section class="footer-bar">&copy;2018 | All Rights Reserved | Tri City Weather Hub | <span id="currentdate"></span><span id="spanDate"></span> | Weather Data From <a class="open-weather" href="http://OpenWeatherMap.org" target="_blank">OpenWeatherMap.org</a>
+    </section>
+  </footer>
+
+<script src="scripts/hamburger.js"></script>
+<script src="scripts/currentdate.js"></script>
+<script src="scripts/towndata.js"></script>
+<script src="scripts/wayfinding.js"></script>
+</body>
+</html>

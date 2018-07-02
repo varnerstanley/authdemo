@@ -74,10 +74,10 @@ nav ul.hide {
   display: none;
 }
 
-/*nav ul li.active a {
+nav ul li.active a {
   background-color: rgba(0, 0, 0, 0.2);
   color: white;
-}*/
+}
 
 main {
   font-family: 'Lato', sans-serif;
