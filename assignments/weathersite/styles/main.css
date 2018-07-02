@@ -95,6 +95,10 @@ main h2 {
   font-weight: 700;
   margin: 0;
 }
+
+main p {
+  font-family: 'Roboto', sans-serif;
+}
 main figure {
   margin: 0 0 .2rem 2%;
   width: 96%;
