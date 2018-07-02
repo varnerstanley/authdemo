@@ -54,10 +54,14 @@
     main {
       padding: 2%;
     }
+    main figure.header-image {
+      margin: 0;
+    }
     main figure img {
       float: left;
       margin-bottom: 20px;
     }
+
     table {
       border-collapse: collapse;
       width: 100%;

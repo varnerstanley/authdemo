@@ -111,6 +111,9 @@ main figure.header-img {
   margin: 0;
 }
 
+main figure.header-image {
+  margin: 0 2% 0 2%;
+}
 main .weather-summary {
   text-align: center;
 }
