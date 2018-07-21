@@ -1,18 +1,24 @@
 {
-  "tuneUp": [
+  "service": [
     {
-    "safety": "Safety Check",
-    "singlespeed": "Singlespeed/BMX Tune",
-    "standardTune": "Standard Tune",
-    "proTune": "Pro Tune",
-    "proTunePlus": "Pro Tune Plus"
-  }],
-  "price": [
+      "name": "Safety Check",
+      "price": "$40"
+    },
     {
-    "safety": 40,
-    "singlespeed": 40,
-    "standardTune": 70,
-    "proTune": 110,
-    "proTunePlus": 130
-  }]
+      "name": "Singlespeed/BMX Tune",
+      "price": "$40"
+    },
+    {
+      "name": "Standard Tune",
+      "price": "$70"
+    },
+    {
+      "name": "Pro Tune",
+      "price": "$110"
+    },
+    {
+      "name": "Pro Tune Plus",
+      "price": "$130"
+    }
+  ]
 }
