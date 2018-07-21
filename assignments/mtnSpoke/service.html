@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto:400,700" rel="stylesheet">
+
+    <title>Sales | The Mountain Spoke</title>
+  </head>
+  <body>
+    <header>
+      <nav class="clearfix">
+        <img id="logo" src="images/mountain-biking-extreme-by_vexels-copy.png" alt="the mountain spoke logo">
+          <h1 id="nav-title">The Mountain Spoke</h1>
+          <button onclick="toggleMenu()">&#9776;</button>
+          <ul class="topnav hide" id="primarynav">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="tours.html">Tours</a></li>
+          <li><a href="events.html">Events</a></li>
+          <li><a href="sales.html">Sales</a></li>
+          <li><a href="service.html">Service</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <picture>
+        <img id="banner" src="images/images/mtn-active-shot1028.jpg" alt="mountain biker" sizes="50vw"
+          srcset="images/mtn-active-shot400.jpg 400w,
+          images/mtn-active-shot900.jpg 900w,
+          images/mtn-active-shot1028.jpg 1100w" class="header-img">
+      </picture>
+    </header>
+    <main>
+      <!-- SECTION 1 -->
+      <div class="tours-title">
+         <h1>SERVICE</h1>
+       </div>
+      <section class="sec1 service">
+        <div class="leftcol">
+          <h1>Service Prices</h1>
+          <table id="t01">
+            <tr>
+              <th id="tuneUp">Tune-Ups</th>
+              <th>Price</th>
+            </tr>
+            <tr>
+              <td id="safetyCheck"></td>
+              <td id="safetyCost"></td>
+            </tr>
+            <tr>
+              <td id="singleSpeed"></td>
+              <td id="singleSpeedCost"></td>
+            </tr>
+            <tr>
+              <td id="standardTune"></td>
+              <td id="standardTuneCost"></td>
+            </tr>
+            <tr>
+              <td id="proTune"></td>
+              <td id="proTuneCost"></td>
+            </tr>
+            <tr>
+              <td id="proTunePlus"></td>
+              <td id="proTunePlusCost"></td>
+            </tr>
+          </table>
+        </div>
+        <div class="rightcol right-img">
+          <img class="img1 bikeSpokesImg" src="images/bicycle-bike-blur-service.jpg" alt="bicycle tire gears">
+        </div>
+      </section>
+
+      <!-- FOOTER  -->
+      <footer>
+        <section id="footer">
+          <p id="foot">&copy; 2018 The Mountain Spoke</p>
+            <a class="socialmedia" href="https://www.facebook.com" target="_blank">
+              <img src="images/facebook.png" alt="facebook icon" style="width:42px;height:42px;border:0">
+            </a>
+            <a class="socialmedia" href="https://www.instagram.com" target="_blank">
+              <img src="images/instagram.png" alt="instagram icon" style="width:42px;height:42px;border:0">
+            </a>
+            <a class="socialmedia youtube" href="https://www.youtube.com" target="_blank">
+              <img src="images/youtube.png" alt="youtube icon" style="width:42px;height:42px;border:0">
+            </a>
+        </section>
+      </footer>
+    </main>
+    <script src="scripts/hamburger.js"></script>
+    <script src="scripts/wayfinding.js"></script>
+    <script src="scripts/service.js"></script>
+  </body>
+</html>

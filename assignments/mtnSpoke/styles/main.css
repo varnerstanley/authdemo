@@ -1,0 +1,406 @@
+body {
+  font-family: 'Lato', sans-serif;
+}
+
+nav, header, main, section, footer {
+  max-width: 1028px;
+  margin: 0 auto;
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #2a2a2a;
+  font-size: 1.2em;
+  line-height: 1.2em;
+  background-color padding: 1em;
+  font-family: 'Lato', sans-serif, monospace;
+}
+
+nav button {
+  margin: .2rem 2%;
+  background-color: transparent;
+  border: none;
+  font-size: 1.6rem;
+  color: #fff;
+}
+
+nav ul {
+  margin: 0 auto;
+  list-style-type: none;
+  width: 100%;
+  padding: 0;
+}
+
+nav ul li a {
+  display: flex;
+  padding: .8rem 2%;
+  color: #fff;
+  text-decoration: none;
+  border-top: 1px solid rgba(0, 0, 0, 1);
+}
+
+nav a:hover {
+  color: #900000;
+  background: #fff;
+}
+
+nav ul.hide {
+  display: none;
+}
+
+nav a {
+  color: #ffffff;
+  text color: #ffffff;
+  line-height: 3em;
+  text-decoration: none;
+  padding: .5em .5em;
+}
+
+nav ul li.active a {
+  background-color: rgba(0, 0, 0, 1);
+  color: white;
+}
+
+#logo {
+  width: 80px;
+  height: 80px;
+  padding-left: 25px;
+}
+
+#nav-title {
+  color: #fff;
+  font-size: 1em;
+  text-align: center;
+}
+
+#banner {
+width: 100%;
+max-width: 1028px;
+}
+
+section.sec1 h1 {
+  text-align: center;
+  font-size: 2em;
+  margin-top: 0;
+}
+
+section.sec1 p {
+  text-align: center;
+  font-size: 1.1em;
+}
+
+.sec1, #sec1, #sec2 {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+}
+
+.leftcol, .rightcol {
+  width: 48%;
+  flex: 1 0 15em;
+  margin: .5em;
+}
+
+.rightcol img {
+  width: 100%;
+}
+
+.right-img {
+  margin-right: 0;
+}
+
+.leftcol img {
+  width: 100%;
+}
+
+.intro {
+  margin-top: 0;
+}
+.rightcol h2, p {
+  text-align: center;
+}
+
+.left-img {
+  margin-left: 0;
+}
+
+.rightcol h1 {
+  text-align: center;
+}
+
+.address {
+  line-height: 1.5em;
+}
+
+.img1, .img2 {
+  border-radius: 3px;
+}
+#sec3 {
+  text-align: center;
+  margin: 10px;
+  padding: 10px;
+}
+
+#footer {
+ width: 100%;
+ display: flex;
+ align-items: center;
+ background-color: #2a2a2a;
+ color: #fff;
+}
+
+#foot {
+  margin-right: auto;
+  padding: 10px;
+  margin-left: 5px;
+}
+
+.socialmedia {
+padding: 5px;
+}
+.youtube {
+margin-right: 10px;
+}
+
+/*-------TOURS PAGE ------*/
+
+.tours-title {
+  text-align: center;
+}
+
+/*----SALES PAGE--------*/
+h3 {
+  text-align: center;
+}
+.topFuel-bike, .fuelEx-bike, .session-bike {
+   box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2);
+   border-radius: 2px;
+   padding-bottom: 5px;
+ }
+
+.bike-info {
+  padding: 10px;
+}
+
+.price {
+  font-weight: bold;
+}
+
+ .bikes img {
+   width: 100%;
+ }
+
+ .bike-container{
+	width: 340px;
+	margin:40px auto;
+	overflow:auto;
+}
+
+.slider-inner{
+	width:300px;
+	position:relative;
+	overflow:hidden;
+	float:left;
+	padding:3px;
+	border:#666 solid 1px;
+}
+
+.slider-inner img{
+	display:none;
+	width:300px;
+
+}
+
+.slider-inner img.active1{
+	display:inline-block;
+}
+
+.prev,.next{
+	float:left;
+	margin-top:130px;
+	cursor: pointer;
+}
+
+.prev{
+	position:relative;
+	margin-right:-45px;
+	z-index:100;
+}
+
+.next{
+	position:relative;
+	margin-left:-45px;
+	z-index:100;
+}
+
+.bike-container h1 {
+  text-align: center;
+}
+
+/*----SERVICE PAGE--------*/
+table {
+    width:100%;
+}
+ table#t01 tr:nth-child(even) {
+    background-color: #eee;
+}
+table#t01 tr:nth-child(odd) {
+   background-color: #fff;
+}
+table#t01 th {
+    background-color: #900000;
+    color: white;
+    text-align: left;
+}
+table#t01 {
+  margin-left: 0;
+}
+#tuneUp {
+  padding-left: 4px;
+}
+.service {
+  margin-bottom: 15px;
+}
+/*----CONTACT PAGE--------*/
+
+.contact-container {
+  display: flex;
+  flex-flow: wrap;
+}
+
+.left-contact-form, .iframe {
+  width: 48%;
+  flex: 1 0 15em;
+  margin: .5em;
+}
+iframe {
+  width: 100%;
+  height: 85%;
+  border: 0;
+  margin-top: 20px;
+}
+/*----EVENTS PAGE--------*/
+table{
+    border-collapse:collapse;
+    border-spacing:0;
+    margin-left: 20px;
+}
+td,th{
+    padding: 0px;
+}
+.table-responsive{
+    overflow-x:auto;
+    min-height:0.01%;
+}
+
+.table-striped > tbody > tr:nth-of-type(odd){
+    background-color:#fbf8f3;
+}
+.table-striped > tbody > tr:nth-of-type(odd){
+    background-color:#f9f9f9;
+}
+tr {
+  line-height: 40px;
+}
+
+td {
+  padding-left: 5px;
+  padding-right: 5px;
+}
+.spacing {
+  padding-bottom: 10px;
+}
+
+.register-title {
+  text-align: center;
+}
+
+/*----------- FORM --------------*/
+form {
+  padding: 10px;
+}
+form fieldset {
+  margin: 2rem 0;
+  border: 1px solid #445ba9;
+  border-radius: 10px;
+  padding: .5rem 2%;
+  width: 96%;
+  max-width: 600px;
+  margin: 0 auto;
+  margin-top: 30px;
+  font-family: 'Lato', sans-serif;
+}
+form legend {
+  color: #900000;
+  margin: 0 1rem;
+  padding: 0 .5rem;
+  font-size: 1.6rem;
+
+}
+form label.top, form div {
+  display: block;
+  padding-top: 1rem;
+  color: #333;
+  font-size: 1rem;
+}
+form label.top input, form label.top select {
+  display: block;
+  font-size: 1rem;
+  border: 1px solid #999;
+  border-radius: 4px;
+  padding: .75rem;
+  color: #555;
+  width: 100%;
+  max-width: 20rem;
+}
+form textarea {
+  border-radius: 4px;
+  border-color: rgba(0, 0, 0, 0.3);
+  padding: 5px;
+  margin-top: 2px;
+}
+
+form .danger {
+  margin-bottom: 2px;
+}
+form input.submit {
+  display: block;
+  padding: 10px;
+  font-size: 1em;
+  border: none;
+  background-color: #900000;
+  border-radius: 2px;
+  color: #fff;
+  font-weight: bold;
+  max-width: 400px;
+  margin: 0 auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  min-width: 250px;
+}
+.thankyou-container {
+  margin: 0 auto;
+  text-align: center;
+  padding: 40px;
+}
+form .sbs {
+  display: block;
+  padding: 5px;
+}
+#thankyou {
+  font-size: 2em;
+  color: #2a2a2a;
+  margin: 0 auto;
+}
+#sub-thanks {
+  font-size: 1.5em;
+}
+
+/*----- Clearfix: Force an Element not to collapse -----*/
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}

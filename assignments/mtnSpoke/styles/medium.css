@@ -1,0 +1,69 @@
+@media only screen and (min-width: 47.5em) {
+
+  /*-----SALES PAGE-----*/
+  .topFuel-bike, .fuelEx-bike, .session-bike {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+  }
+  .bike-container{
+   width: 540px;
+   margin:40px auto;
+   overflow:auto;
+ }
+
+ .slider-inner{
+   width:500px;
+   position:relative;
+   overflow:hidden;
+   float:left;
+   padding:3px;
+   border:#666 solid 1px;
+ }
+
+ .slider-inner img{
+   display:none;
+   width:500px;
+
+ }
+ .bikes {
+     display: grid;
+     grid-template-columns: 1fr 1fr 1fr;
+     grid-gap: 10px;
+     padding-bottom: 10px;
+ }
+ .mid-price {
+   padding-top: 17px;
+ }
+ .last-price {
+   margin-bottom: 0;
+ }
+
+ nav button {display: none;}
+
+ nav ul {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-end;
+        padding-left: 20px;
+    }
+ nav ul.hide {
+    display: flex;
+  }
+
+  nav ul li a {
+    font-size: 1.3rem;
+    border-top: none;
+    padding: .8rem 1rem;
+  }
+
+  nav {
+    flex-direction: row;
+  }
+  #nav-title {
+    width: 32%;
+    text-align: left;
+    font-size: 1.2em;
+  }
+
+}

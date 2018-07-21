@@ -1,0 +1,24 @@
+{
+  "service": [
+    {
+      "name": "Safety Check",
+      "price": "$40"
+    },
+    {
+      "name": "Singlespeed/BMX Tune",
+      "price": "$40"
+    },
+    {
+      "name": "Standard Tune",
+      "price": "$70"
+    },
+    {
+      "name": "Pro Tune",
+      "price": "$110"
+    },
+    {
+      "name": "Pro Tune Plus",
+      "price": "$130"
+    }
+  ]
+}

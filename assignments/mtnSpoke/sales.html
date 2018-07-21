@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto:400,700" rel="stylesheet">
+
+    <title>Sales | The Mountain Spoke</title>
+  </head>
+  <body>
+    <header>
+      <nav class="clearfix">
+        <img id="logo" src="images/mountain-biking-extreme-by_vexels-copy.png" alt="the mountain spoke logo">
+          <h1 id="nav-title">The Mountain Spoke</h1>
+          <button onclick="toggleMenu()">&#9776;</button>
+          <ul class="topnav hide" id="primarynav">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="tours.html">Tours</a></li>
+          <li><a href="events.html">Events</a></li>
+          <li><a href="sales.html">Sales</a></li>
+          <li><a href="service.html">Service</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <picture>
+        <img id="banner" src="images/images/mtn-active-shot1028.jpg" alt="mountain biker" sizes="50vw"
+          srcset="images/mtn-active-shot400.jpg 400w,
+          images/mtn-active-shot900.jpg 900w,
+          images/mtn-active-shot1028.jpg 1100w" class="header-img">
+      </picture>
+    </header>
+    <main>
+      <div class="tours-title">
+         <h1>SHOP OUR LATEST</h1>
+       </div>
+      <section>
+        <div class="bike-container">
+          <div class="slider-outer">
+            <img src="images/arrow-left.png" class="prev" alt="Prev">
+            <div class="slider-inner">
+              <img src="images/top-fuel-9.9-race.jpeg" class="active1">
+              <img src="images/Fuel-ex-99.jpeg">
+              <img src="images/Session-99.jpeg">
+            </div>
+            <img src="images/arrow-right.png" class="next" alt="Next">
+          </div>
+        </div>
+      </section>
+
+      <div class="bikes">
+          <div class="topFuel-bike">
+              <article>
+                  <figure>
+                      <img src="images/top-fuel-9.9-race.jpeg" alt="top fuel race bike">
+                  </figure>
+                  <h3>Top Fuel 9.9 Race</h3>
+                  <p class="bike-info">Top Fuel 9.9 RSL is our fastest full suspension XC mountain bike. Everything on this bike is geared toward helping you go faster and perform better. An OCLV Mountain Carbon frame, carbon components, and super-lightweight full suspension setup make Top Fuel 9.9 RSL a race-ready rocket that flies over gnarly terrain on its way to the podium.</p>
+                  <p class="price">Price: $8,499.99 - $8,999.99</p>
+              </article>
+          </div>
+
+          <div class="fuelEx-bike">
+              <article>
+                  <figure>
+                      <img src="images/Fuel-ex-99.jpeg" alt="Fuel ex bike">
+                  </figure>
+                  <h3>Fuel EX 9.9 29</h3>
+                  <p class="bike-info">Fuel EX 9.9 makes no compromises. A carbon frame, carbon wheels, SRAM's flagship 1x12 drivetrain, and FOX Factory Float suspension make this the one carbon full suspension mountain bike that rules every trail. It's fast on XC singletrack, light on climbs, and stable through the rowdiest terrain you can find.</p>
+                  <p class="price mid-price">Price: $8,399.99 - $8,899.99</p>
+              </article>
+          </div>
+
+          <div class="session-bike">
+              <article>
+                  <figure>
+                      <img src="images/Session-99.jpeg" alt="Session 9.9 bike">
+                  </figure>
+                  <h3>Session 9.9 DH 27.5</h3>
+                  <p class="bike-info last-price">Session 9.9 is the pinnacle of downhill mountain bike performance. It's built for one reason: going as fast as freakin' possible down hills. It pairs proven Shimano Saint parts with our premium OCLV Mountain Carbon frame and FOX Factory suspension. This is the same DH bike the pros ride, and the bike of choice for World Champion Rachel Atherton.</p>
+                  <p class="price last-price-margin">Price: $7,999.99</p>
+              </article>
+          </div>
+      </div>
+
+      <!-- FOOTER  -->
+      <footer>
+        <section id="footer">
+          <p id="foot">&copy; 2018 The Mountain Spoke</p>
+            <a class="socialmedia" href="https://www.facebook.com" target="_blank">
+              <img src="images/facebook.png" alt="facebook icon" style="width:42px;height:42px;border:0">
+            </a>
+            <a class="socialmedia" href="https://www.instagram.com" target="_blank">
+              <img src="images/instagram.png" alt="instagram icon" style="width:42px;height:42px;border:0">
+            </a>
+            <a class="socialmedia youtube" href="https://www.youtube.com" target="_blank">
+              <img src="images/youtube.png" alt="youtube icon" style="width:42px;height:42px;border:0">
+            </a>
+        </section>
+      </footer>
+    </main>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="scripts/main.js"></script>
+    <script src="scripts/hamburger.js"></script>
+    <script src="scripts/wayfinding.js"></script>
+  </body>
+</html>
