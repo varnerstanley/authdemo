@@ -1,18 +1,18 @@
 {
-  "tuneUp":
+  "tuneUp": [
     {
     "safety": "Safety Check",
     "singlespeed": "Singlespeed/BMX Tune",
     "standardTune": "Standard Tune",
     "proTune": "Pro Tune",
     "proTunePlus": "Pro Tune Plus"
-  },
-  "price": 
+  }],
+  "price": [
     {
     "safety": 40,
     "singlespeed": 40,
     "standardTune": 70,
     "proTune": 110,
     "proTunePlus": 130
-  }
+  }]
 }
