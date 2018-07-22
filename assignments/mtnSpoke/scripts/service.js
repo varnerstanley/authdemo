@@ -1,5 +1,5 @@
 var serviceDataRequest = new XMLHttpRequest();
-var serviceDataURL = 'https://varnerstanley.github.io/assignments/serviceData.json';
+var serviceDataURL = 'https://varnerstanley.github.io/assignments/data/serviceData.json';
 
 serviceDataRequest.open("GET", serviceDataURL, true);
 serviceDataRequest.send();
