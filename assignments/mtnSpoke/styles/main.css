@@ -396,6 +396,23 @@ form .sbs {
   font-size: 1.5em;
 }
 
+video {
+  width: 350px;
+  margin: 0 auto;
+}
+.video {
+  width: 350px;
+  margin: 0 auto;
+  padding: 20px;
+}
+.video h1 {
+  text-align: center;
+}
+
+.video-link {
+  color: #fff;
+  margin-right: 20px;
+}
 /*----- Clearfix: Force an Element not to collapse -----*/
 .clearfix:after {
   content: "";
