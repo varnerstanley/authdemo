@@ -50,8 +50,17 @@ h6 {
   padding-top: 0;
 }
 
+.intro {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
 .text-faded {
   color: #fff;
+  font-family: sans-serif;
+  font-size: 1.3em;
+}
+.text-faded2 {
+  color: #6c757d;
   font-family: sans-serif;
   font-size: 1.3em;
 }
@@ -225,6 +234,7 @@ header.masthead p {
   max-width: 400px;
 }
 
+
 .portfolio-box {
   position: relative;
   display: block;
@@ -290,6 +300,9 @@ header.masthead p {
 
 .text-primary {
   color: #F05F40 !important;
+}
+.text-primary2 {
+  color: #fff !important;
 }
 
 .btn {
