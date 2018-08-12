@@ -397,8 +397,16 @@
   padding-bottom: 0;
   padding-top: 0;
 }
+
 .main-cont {
   background-color: #212529;
+  width: 100%;
+  overflow: hidden;
+  /*padding: 3rem 0;*/
+}
+
+.main-cont2 {
+  background-color: #fff;
   width: 100%;
   overflow: hidden;
   /*padding: 3rem 0;*/
