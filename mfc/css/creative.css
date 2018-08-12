@@ -54,6 +54,18 @@ h6 {
   padding-top: 3rem;
   padding-bottom: 3rem;
 }
+
+.nFont {
+  font-family: 'America', sans-serif;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.about1 {
+  padding-top: 3.5rem;
+  padding-bottom: 3.5rem;
+}
+
 .text-faded {
   color: #fff;
   font-family: sans-serif;
