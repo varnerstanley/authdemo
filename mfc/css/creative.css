@@ -61,6 +61,28 @@ h6 {
   line-height: 1.5;
 }
 
+#phone {
+  font-weight: bold;
+  font-size: 1.1em;
+}
+
+.bullets {
+  padding-top: 3.5rem;
+  padding-bottom: 3.5rem;
+}
+.tool {
+  text-align: center;
+}
+
+.tool2 {
+  text-align: center;
+  font-size: 1em;
+}
+
+.get-pro {
+  font-weight: bold;
+  font-size: 1.1rem;
+}
 .about1 {
   padding-top: 3.5rem;
   padding-bottom: 3.5rem;
