@@ -292,6 +292,11 @@ header.masthead p {
     max-width: 450px;
 }
 
+.service-box3 {
+    max-width: 450px;
+}
+
+
 .portfolio-box {
     position: relative;
     display: block;
