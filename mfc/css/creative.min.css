@@ -406,6 +406,10 @@ header.masthead p {
   font-weight: bold;
 }
 
-.monthly {
-  text-align: left;
+.l-row {
+  padding-top: 0;
+  padding-bottom: 3.5rem;
+}
+.first-row {
+  padding-bottom: 0;
 }
