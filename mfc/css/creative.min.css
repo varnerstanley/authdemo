@@ -11,7 +11,7 @@ body {
 hr {
     max-width: 50px;
     border-width: 3px;
-    border-color: #f05f40
+    border-color: #FF715B;
 }
 
 hr.light {
@@ -160,13 +160,13 @@ img::-moz-selection {
 #mainNav .navbar-brand {
     font-weight: 700;
     text-transform: uppercase;
-    color: #f05f40;
+    color: #FF715B;
     font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif
 }
 
 #mainNav .navbar-brand:focus,
 #mainNav .navbar-brand:hover {
-    color: #f05f40
+    color: #FF715B;
 }
 
 #mainNav .navbar-nav>li.nav-item>a.nav-link,
@@ -179,12 +179,12 @@ img::-moz-selection {
 
 #mainNav .navbar-nav>li.nav-item>a.nav-link:focus:hover,
 #mainNav .navbar-nav>li.nav-item>a.nav-link:hover {
-    color: #f05f40
+    color: #FF715B;
 }
 
 #mainNav .navbar-nav>li.nav-item>a.nav-link.active,
 #mainNav .navbar-nav>li.nav-item>a.nav-link:focus.active {
-    color: #f05f40!important;
+    color: #FF715B!important;
     background-color: transparent
 }
 
@@ -221,11 +221,11 @@ img::-moz-selection {
         background-color: #fff
     }
     #mainNav.navbar-shrink .navbar-brand {
-        color: #f05f40
+        color: #FF715B;
     }
     #mainNav.navbar-shrink .navbar-brand:focus,
     #mainNav.navbar-shrink .navbar-brand:hover {
-        color: #f05f40
+        color: #FF715B;
     }
     #mainNav.navbar-shrink .navbar-nav>li.nav-item>a.nav-link,
     #mainNav.navbar-shrink .navbar-nav>li.nav-item>a.nav-link:focus {
@@ -233,7 +233,7 @@ img::-moz-selection {
     }
     #mainNav.navbar-shrink .navbar-nav>li.nav-item>a.nav-link:focus:hover,
     #mainNav.navbar-shrink .navbar-nav>li.nav-item>a.nav-link:hover {
-        color: #f05f40
+        color: #FF715B;
     }
 }
 
@@ -361,7 +361,7 @@ header.masthead p {
 }
 
 .text-primary {
-    color: #f05f40!important
+    color: #FF715B!important
 }
 
 .text-primary2 {
@@ -381,8 +381,8 @@ header.masthead p {
 }
 
 .btn-primary {
-    background-color: #f05f40;
-    border-color: #f05f40;
+    background-color: #FF715B;
+    border-color: #FF715B;
 }
 
 .btn-primary:active,
@@ -431,4 +431,10 @@ header.masthead p {
   .t-text {
     padding-left: 30px;
   }
+}
+
+.devices {
+  text-align: center;
+  height: 75px;
+  padding-bottom: 15px;
 }
