@@ -426,3 +426,9 @@ header.masthead p {
     width: 100%;
   }
 }
+
+@media (max-width: 767px) {
+  .t-text {
+    padding-left: 30px;
+  }
+}
