@@ -399,7 +399,7 @@ header.masthead p {
 
 .t-text {
   font-family: 'America', sans-serif;
-  color: #6c757d;
+  color: #212529;
   font-size: 16px;
   line-height: normal;
   text-align: left;
@@ -412,4 +412,17 @@ header.masthead p {
 }
 .first-row {
   padding-bottom: 0;
+}
+
+.nList {
+  font-weight: normal;
+}
+.laptop {
+  width: 100%;
+}
+
+@media (max-width: 900px) {
+  .laptop {
+    width: 100%;
+  }
 }
