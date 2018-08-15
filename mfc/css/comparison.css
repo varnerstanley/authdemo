@@ -372,7 +372,8 @@
 
 .h2 {
   color: #FFFFFF;
-  font-weight: 900 !important;
+  font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+  font-weight: 700 !important;
   -webkit-letter-spacing: inherit;
   -moz-letter-spacing: inherit;
   -ms-letter-spacing: inherit;
