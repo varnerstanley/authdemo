@@ -108,13 +108,13 @@ h6 {
 
 .text-faded {
     color: #fff;
-    font-family: Open sans;
+    font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
     font-size: 1.3em;
 }
 
 .text-faded2 {
     color: #6c757d;
-    font-family: Open sans;
+    font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
     font-size: 1.3em;
 }
 
@@ -433,7 +433,16 @@ header.masthead p {
   }
 }
 
-
+.log-in {
+  font-weight: 700;
+  padding-right: 0;
+  text-transform: uppercase;
+}
+@media (min-width: 500px) {
+  .log-in {
+    display: none;
+  }
+}
 .devices {
   text-align: center;
   height: 80px;
