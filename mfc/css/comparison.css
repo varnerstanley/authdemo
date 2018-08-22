@@ -44,32 +44,32 @@
 }
 
 .green {
-  background-color: rgb(99, 214, 163);
+  background-color: #85FFC7;
   flex-basis: 20%;
 }
 
 .red {
-  background-color: #F06543;
+  background-color: #FE4A49;
   flex-basis: 80%;
 }
 
 .blue {
-  background-color: rgb(53, 142, 255);
+  background-color: #0496FF;
   flex-basis: 3%;
 }
 
 .green2 {
-  background-color: rgb(99, 214, 163);
+  background-color: #85FFC7;
   flex-basis: 90%;
 }
 
 .red2 {
-  background-color: #F06543;
+  background-color: #FE4A49;
   flex-basis: 5%;
 }
 
 .blue2 {
-  background-color: rgb(53, 142, 255);
+  background-color: #0496FF;
   flex-basis: 5%;
 }
 
@@ -145,7 +145,7 @@
   line-height: 1.5 !important;
 }
 .percentage {
-  color: #63D6A3;
+  color: #85FFC7;
   font-weight: bold !important;
   -webkit-letter-spacing: inherit;
   -moz-letter-spacing: inherit;
@@ -260,7 +260,7 @@
   line-height: 1.5 !important;
 }
 .fees2 {
-  color: #358EFF;
+  color: #0496FF;
   font-weight: bold !important;
   -webkit-letter-spacing: inherit;
   -moz-letter-spacing: inherit;
