@@ -422,13 +422,29 @@ header.masthead p {
 }
 
 .mobile {
-  height: 350px;
-  margin-top: -40px;
+  width: 500px;
+  /*margin-top: -40px;*/
+}
+
+@media (max-width: 1045px) {
+  .mobile {
+    width: 425px;
+  }
+}
+
+.desktop {
+  height: 200px;
+}
+.laptop2 {
+  height: 150px;
 }
 
 @media (max-width: 900px) {
   .laptop {
     width: 100%;
+  }
+  .mobile {
+    width: 350px;
   }
 }
 
