@@ -495,3 +495,7 @@ header.masthead p {
   height: 1em;
   padding-right: 10px;
 }
+
+img {
+    pointer-events: none;
+}
