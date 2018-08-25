@@ -426,6 +426,10 @@ header.masthead p {
   /*margin-top: -40px;*/
 }
 
+.g-text {
+  font-size: .8rem;
+}
+
 @media (max-width: 1045px) {
   .mobile {
     width: 425px;
@@ -449,8 +453,11 @@ header.masthead p {
 }
 
 @media (max-width: 767px) {
-  .t-text {
-    padding-left: 30px;
+  .checkbox {
+    padding-left: 10px;
+  }
+  .g-text {
+    font-size: 12px;
   }
 }
 
@@ -472,4 +479,19 @@ header.masthead p {
 
 .devices2 {
   height: 4em;
+}
+
+.template {
+  color: #cdcdcf;
+  text-transform: uppercase;
+  font-size: 13px;
+}
+
+.check {
+  display: flex;
+}
+
+.checkbox {
+  height: 1em;
+  padding-right: 10px;
 }
