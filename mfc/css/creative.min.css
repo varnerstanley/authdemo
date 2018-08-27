@@ -469,6 +469,9 @@ header.masthead p {
   .g-text {
     font-size: 12px;
   }
+  .service-box2, .service-box3, .nFont2 {
+    text-align: center;
+  }
 }
 
 .log-in {
@@ -543,9 +546,6 @@ img {
   .freedom-sec {
     padding-left: 20px;
     padding-right: 20px;
-  }
-  .service-box2, .service-box3, .nFont2 {
-    text-align: center;
   }
 }
 
