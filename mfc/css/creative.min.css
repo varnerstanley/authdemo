@@ -65,7 +65,7 @@ h6 {
     font-family: 'America', sans-serif;
     font-size: 1rem;
     line-height: 1.5;
-    text-align: left;
+
 }
 
 #phone {
@@ -298,12 +298,11 @@ header.masthead p {
 }
 .service-box2 {
     max-width: 350px;
-    text-align: left;
 }
 
 .service-box3 {
     max-width: 350px;
-    text-align: left;
+
 }
 
 
@@ -468,9 +467,6 @@ header.masthead p {
   }
   .g-text {
     font-size: 12px;
-  }
-  .service-box2, .service-box3, .nFont2 {
-    text-align: center;
   }
 }
 
