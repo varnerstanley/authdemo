@@ -512,3 +512,9 @@ img {
   font-size: 1.2rem;
   font-style: italic;
 }
+
+@media (max-width: 500px) {
+  .top-text2 {
+    padding: 20px;
+  }
+}
