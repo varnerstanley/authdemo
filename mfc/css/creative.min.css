@@ -508,6 +508,9 @@ img {
   text-align: left;
 }
 
+.three-icons {
+  margin-top: 0!important;
+}
 .tech-team {
   font-size: 1.2rem;
   font-style: italic;
