@@ -499,3 +499,16 @@ header.masthead p {
 img {
     pointer-events: none;
 }
+
+.top-icons {
+  text-align: left;
+}
+
+.top-text {
+  text-align: left;
+}
+
+.tech-team {
+  font-size: 1.2rem;
+  font-style: italic;
+}
