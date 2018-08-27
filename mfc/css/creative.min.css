@@ -65,6 +65,7 @@ h6 {
     font-family: 'America', sans-serif;
     font-size: 1rem;
     line-height: 1.5;
+    text-align: left;
 }
 
 #phone {
@@ -296,11 +297,13 @@ header.masthead p {
     text-align: left;
 }
 .service-box2 {
-    max-width: 450px;
+    max-width: 350px;
+    text-align: left;
 }
 
 .service-box3 {
-    max-width: 450px;
+    max-width: 350px;
+    text-align: left;
 }
 
 
@@ -523,11 +526,31 @@ img {
   font-style: italic;
 }
 
+.freedom-sec {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
 @media (max-width: 500px) {
   .top-text2 {
-    padding: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
   }
-  .about1 {
-    padding: 20px;
+  .about2 {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .freedom-sec {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .service-box2, .service-box3, .nFont2 {
+    text-align: center;
+  }
+}
+
+@media (max-width: 991px) {
+  .ux2 {
+    padding-top: 20px;
   }
 }
