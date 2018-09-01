@@ -537,6 +537,7 @@ img {
 .social {
   padding: 3px;
 }
+
 @media (max-width: 500px) {
   .top-text2 {
     padding-left: 20px;
