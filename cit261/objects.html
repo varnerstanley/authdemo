@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Object practice javascript</title>
+    <script type="text/javascript" src="objects.js">
+
+    </script>
+  </head>
+  <body>
+    <h1>javaScript practice</h1>
+    <p>Open the console!</p>
+    <p>Run...</p>
+    <p>
+      movies.forEach(function(movie){
+        var result = "You have ";
+        if(movie.hasWatched) {
+          result += "watched ";
+        } else {
+          result += "not seen ";
+        }
+        result += "\"" + movie.title + "\" - ";
+        result += movie.rating + " stars";
+        console.log(result)
+      })
+    </p>
+    <p>Object Creation function</p>
+      <p>
+        The Object.create() method creates a new object, using an existing object to provide the newly created object's __proto__ . (See your browser console for visual evidence.)
+      </p>
+      <p>
+        Run... me.printIntroduction();
+      </p>
+      <h3>JS Methods</h3>
+      <p>
+        JavaScript methods are actions that can be performed on objects. A JavaScript method is a property containing a function definition.
+      </p>
+
+      <p>Creating and using an object method.A method is actually a function definition stored as a property value.</p>
+      <p>Run... document.getElementById("demo").innerHTML = person1.fullName();</p>
+​
+      <p id="demo"></p>
+​
+      <script>
+      var person1 = {
+          firstName: "John",
+          lastName : "Doe",
+          id       : 5566,
+          fullName : function() {
+             return this.firstName + " " + this.lastName;
+          }
+      };
+      document.getElementById("demo").innerHTML = person1.fullName();
+      </script>
+      </p>
+    </p>
+  </body>
+</html>
