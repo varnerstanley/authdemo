@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style media="screen">
+    div {
+      margin: 20px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+<div>
+  <h1>HTML5 Tags - Video, Audio, and Canvas</h1>
+<video width="400" controls>
+  <source src="DB SA Shoulder Press.mp4" type="video/mp4">
+  <source src="DB SA Shoulder Press.mp4" type="video/ogg">
+  Your browser does not support HTML5 video.
+</video>
+<p>
+Source
+<a href="https://youtu.be/PBXURBnx1wk" target="_blank">My Fitness Coach</a>.
+</p>
+</div>
+
+<div>
+  <h2>Audio</h2>
+  <audio controls>
+  <source src="horse.ogg" type="audio/ogg">
+  <source src="horse.mp3" type="audio/mpeg">
+Your browser does not support the audio element.
+</audio>
+
+</div>
+
+<div>
+  <h3>Canvas</h3>
+  <canvas id="myCanvas" width="200" height="100" style="border:1px solid #000000;">
+</canvas>
+
+<canvas id="mmyCanvas" width="200" height="100" style="border:1px solid #d3d3d3;">
+Your browser does not support the HTML5 canvas tag.</canvas>
+
+<script>
+var c = document.getElementById("mmyCanvas");
+var ctx = c.getContext("2d");
+ctx.beginPath();
+ctx.arc(95,50,40,0,2*Math.PI);
+ctx.stroke();
+</script>
+
+  <canvas id="myCanvas" width="200" height="100" style="border:1px solid #d3d3d3;">
+Your browser does not support the HTML5 canvas tag.</canvas>
+
+<script>
+var c = document.getElementById("myCanvas");
+var ctx = c.getContext("2d");
+// Create gradient
+var grd = ctx.createLinearGradient(0,0,200,0);
+grd.addColorStop(0,"red");
+grd.addColorStop(1,"white");
+// Fill with gradient
+ctx.fillStyle = grd;
+ctx.fillRect(10,10,150,80);
+</script>
+</div>
+</body>
+</html>
