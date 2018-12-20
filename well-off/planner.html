@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="stylesheet" href="CSS/main.css">
+
+   <title>WellOff Financial Watcher</title>
+   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+ </head>
+ <body>
+   <header>
+     <nav class="clearfix">
+       <div id="mySidenav" class="sidenav">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+          <a href="index.html">Home</a>
+          <a href="bitcoin.html">Bitcoin</a>
+          <a href="interest.html">Interest</a>
+          <a href="mortgage.html">Mortgage</a>
+          <a href="planner.html">Planner</a>
+        </div>
+        <div class="nav-style" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; <i class="fas fa-1x fa-dollar-sign dollarIcon"></i> <span class="nav-title">Well Off</span></div>
+    </nav>
+   </header>
+   <main>
+     <div class="container">
+       <h1 class="planner-title">Financial Goal Planner</h1>
+       <p class="plan-subtitle">This daily/weekly planner is here so you can set weekly goals to pay off debt. Specify exact amounts you will pay each week and check them off when you are done.</p>
+      <p>
+        <label for="new-task">Add Weekly Goals</label><input id="new-task" type="text" placeholder="Extra $100 on Mortgage"><button>Add</button>
+      </p>
+
+      <h3>This Weeks Goals</h3>
+      <ul id="incomplete-tasks">
+        <li><input type="checkbox"><label>$30 Visa Card</label><input type="text"><button class="edit">Edit</button><button class="delete">Delete</button></li>
+
+
+      </ul>
+
+      <h3>Completed</h3>
+      <ul id="completed-tasks">
+        <li><input type="checkbox" checked><label>$10 Amex Card</label><input type="text"><button class="edit">Edit</button><button class="delete">Delete</button></li>
+      </ul>
+    </div>
+
+
+
+
+
+     <footer id="footer">
+       <p id="foot">&copy; 2018 Well-Off Financial Coaching</p>
+
+     </footer>
+   </main>
+
+   <!-- <script src="scripts/wayfinding.js"></script> -->
+   <script src="scripts/hamburger.js"></script>
+
+   <script type="text/javascript" src="scripts/planner.js"></script>
+ </body>
+</html>

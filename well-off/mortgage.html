@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="stylesheet" href="CSS/main.css">
+   <title>WellOff Financial Watcher</title>
+   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+ </head>
+ <body>
+   <header>
+     <nav class="clearfix">
+       <div id="mySidenav" class="sidenav">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+          <a href="index.html">Home</a>
+          <a href="bitcoin.html">Bitcoin</a>
+          <a href="interest.html">Interest</a>
+          <a href="mortgage.html">Mortgage</a>
+          <a href="planner.html">Planner</a>
+        </div>
+        <div class="nav-style" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; <i class="fas fa-1x fa-dollar-sign dollarIcon"></i> <span class="nav-title">Well Off</span></div>
+    </nav>
+           <div class="headImg">
+                 <img id="banner" src="" alt="">
+                 <div class="head-text">
+                   <div class="centered">
+                     <h2 class="hText">Mortgage Caculator</h2>
+                   </div>
+                 </div>
+
+               </div>
+   </header>
+   <main>
+     <div class="interest-cont">
+
+     <form name="loandata">
+       <table>
+         <tr><td colspan="3"><b>Enter Loan Information:</b></td></tr>
+         <tr>
+           <td>1)</td>
+           <td>Amount of the loan (any currency):</td>
+           <td><input type="text" name="principal" size="12"
+                      onchange="calculate();"></td>
+         </tr>
+         <tr>
+           <td>2)</td>
+           <td>Annual percentage rate of interest:</td>
+           <td><input type="text" name="interest" size="12"
+                      onchange="calculate();"></td>
+         </tr>
+         <tr>
+           <td>3)</td>
+           <td>Repayment period in years:</td>
+           <td><input type="text" name="years" size="12"
+                      onchange="calculate();"></td>
+         </tr>
+         <tr><td colspan="3">
+           <button type="button" class="bubbly-button" onclick="calculate();">Compute</button>
+         </td></tr>
+         <tr><td colspan="3">
+           <b>Payment Information:</b>
+         </td></tr>
+         <tr>
+           <td>4)</td>
+           <td>Your monthly payment will be:</td>
+           <td><input type="text" name="payment" size="12"></td>
+         </tr>
+         <tr>
+           <td>5)</td>
+           <td>Your total payment will be:</td>
+           <td><input type="text" name="total" size="12"></td>
+         </tr>
+         <tr>
+           <td>6)</td>
+           <td>Your total interest payments will be:</td>
+           <td><input type="text" name="totalinterest" size="12"></td>
+         </tr>
+       </table>
+     </form>
+   </div>
+     <footer id="footer">
+       <p id="foot">&copy; 2018 Well-Off Financial Coaching</p>
+       <!-- <div class="socialCont">
+         <a class="socialmedia" href="https://www.facebook.com" target="_blank">
+               <img src="images/facebook.png" alt="facebook icon" style="width:42px;height:42px;border:0">
+             </a>
+             <a class="images/socialmedia" href="https://www.instagram.com" target="_blank">
+               <img src="images/instagram.png" alt="instagram icon" style="width:42px;height:42px;border:0">
+             </a>
+             <a class="socialmedia youtube" href="https://www.youtube.com" target="_blank">
+               <img src="images/youtube.png" alt="youtube icon" style="width:42px;height:42px;border:0">
+             </a>
+       </div> -->
+     </footer>
+   </main>
+
+   <!-- <script src="scripts/wayfinding.js"></script> -->
+   <script src="scripts/hamburger.js"></script>
+   <script src="scripts/mortgage.js"></script>
+   <script src="scripts/button.js"></script>
+
+ </body>
+</html>
