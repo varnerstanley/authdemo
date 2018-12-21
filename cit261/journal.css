@@ -1,0 +1,481 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700');
+body {
+  font-family: 'Lato', sans-serif;
+}
+
+.container {
+  max-width: 960px;
+  margin: 20px auto;
+  padding: 20px;
+  padding-top: 0;
+
+}
+.button {
+  background-color: dodgerblue;
+  padding: 15px;
+  color: #fff;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.curtain {
+  width: 100%; /* Ensures the component is the full screen width */
+  height: 300px; /* We're using this for demo purposes */
+  overflow: hidden; /* Allows us to slide the panels outside the container without them showing */
+}
+
+.curtain__wrapper {
+  width: 100%;
+  height: 100%;
+}
+
+.curtain__panel {
+  background: dodgerblue;
+  width: 50%; /* Each panel takes up half the container */
+  height: 300px; /* Used for demo purposes */
+  float: left; /* Makes sure panels are side-by-side */
+  position: relative; /* Needed to define the z-index */
+  z-index: 2; /* Places the panels in front of the prize */
+  /* one second ease out */
+  transition: all 1s ease-out; /* Animates the sliding transition */
+}
+
+.curtain__panel--left {
+  /* Styles for sliding the left panel */
+}
+
+.curtain__panel--right {
+  /* Styles for sliding the right panel */
+}
+
+.curtain__prize {
+  background: #333;
+  position: absolute; /* Forces the prize position into the container start */
+  z-index: 1; /* Places the prize behind the panels, which are z-index 2 */
+  width: 300px;
+  height: 300px;
+}
+
+input[type=checkbox] {
+  position: absolute; /* Force the checkbox at the start of the container */
+  cursor: pointer; /* Indicate the curtain is clickable */
+  width: 100%; /* The checkbox is as wide as the component */
+  height: 300px; /* The checkbox is as tall as the component */
+  z-index: 100; /* Make sure the checkbox is on top of everything else */
+  opacity: 0; /* Hide the checkbox */
+}
+
+/* When the checkbox is checked... */
+
+/* Slide the first panel in */
+input[type=checkbox]:checked ~ div.curtain__panel--left {
+  transform: translateX(0);
+}
+
+/* Slide the second panel in */
+input[type=checkbox]:checked ~ div.curtain__panel--right {
+  transform: translateX(0);
+}
+
+/* Slide the panel to the left out of the container */
+.curtain__panel--left {
+  transform: translateX(-100%);
+}
+
+/* Slide the panel to the right out of the container */
+.curtain__panel--right {
+  transform: translateX(100%);
+}
+
+.container-one {
+    padding: 1vmin;
+    height: 25vmin;
+    width: 25vmin;
+    background-color: teal;
+}
+
+.orbiting-circle {
+    height: 25%;
+    width: 25%;
+    background-color: darkred;
+    border-radius: 50%;
+  animation: orbit 3s linear infinite;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+@keyframes orbit {
+    0% { transform: translate(0,0); }
+    5% { transform: translate(0,0); } /* don't change for 5% of the time...pause */
+    25% { transform: translate(300%,0%); } /* start moving again */
+    30% { transform: translate(300%,0%); } /* pause */
+    50% { transform: translate(300%,300%); } /* move */
+    55% { transform: translate(300%,300%); }
+    75% { transform: translate(0%,300%); }
+    80% { transform: translate(0%,300%); }
+    100% { transform: translate(0%,0%); }
+}
+
+#str {
+   width: 350px;
+   padding: 20px;
+   height: auto;
+   font-family: sans-serif;
+   font-size: 40px;
+   margin: 0 auto;
+   color: #fff;
+   font-weight: bold;
+   background: #000
+}
+
+.boxdiv {
+  border-radius:10px;
+  padding:10px;
+  background-color: dodgerblue;
+}
+.box {
+  margin:10px;
+  background:#09C;
+  font-weight:bolder;
+  width:90px;
+  height:90px;
+  cursor:pointer;
+  	-webkit-transition:width 0.3s linear 0s;
+	transition:width 0.3s linear 0s;
+    cursor: zoom-in;
+  cursor: -webkit-zoom-in;
+  cursor: -moz-zoom-in;
+  cursor: -o-zoom-in;
+  cursor: -ms-zoom-in;
+}
+.zoomBox:hover{
+  margin:10px;
+  background:#0C0;
+  font-weight:bolder;
+  font-size:40px;
+  width:200px;
+  height:200px;
+  cursor:pointer;
+  	-webkit-transition:width 0.3s linear 0s;
+	transition:width 0.3s linear 0s;
+      cursor: zoom-out;
+  cursor: -webkit-zoom-out;
+  cursor: -moz-zoom-out;
+  cursor: -o-zoom-out;
+  cursor: -ms-zoom-out;
+}
+
+.spinner-block {
+  width: 50px;
+  text-align: center;
+  margin-right: 83px;
+}
+.spinner-block:nth-child(5n) {
+  margin-right: 0px;
+}
+.spinner-block h2 {
+
+}
+.spinner-eff {
+  position: relative;
+  width: 50px;
+  height: 50px;
+}
+.spinner-eff:before, .spinner-eff:after {
+  content: "";
+  display: block;
+}
+.spinner-eff .spinner-bar:before, .spinner-eff .spinner-bar:after {
+  content: "";
+  display: block;
+}
+
+.spinner-eff.spinner-eff-4 {
+  -webkit-animation: rotation 12.8s steps(1) 0s infinite;
+          animation: rotation 12.8s steps(1) 0s infinite;
+}
+@-webkit-keyframes rotation {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  25% {
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+  }
+  50% {
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+  }
+  75% {
+    -webkit-transform: rotate(270deg);
+            transform: rotate(270deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+@keyframes rotation {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  25% {
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+  }
+  50% {
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+  }
+  75% {
+    -webkit-transform: rotate(270deg);
+            transform: rotate(270deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes bar-top {
+  0% {
+    -webkit-transform: scale(0, 1);
+            transform: scale(0, 1);
+  }
+  12.5% {
+    -webkit-transform: scale(1, 1);
+            transform: scale(1, 1);
+  }
+  87.5% {
+    -webkit-transform: scale(1, 1);
+            transform: scale(1, 1);
+  }
+  100% {
+    -webkit-transform: scale(0, 1);
+            transform: scale(0, 1);
+  }
+}
+@keyframes bar-top {
+  0% {
+    -webkit-transform: scale(0, 1);
+            transform: scale(0, 1);
+  }
+  12.5% {
+    -webkit-transform: scale(1, 1);
+            transform: scale(1, 1);
+  }
+  87.5% {
+    -webkit-transform: scale(1, 1);
+            transform: scale(1, 1);
+  }
+  100% {
+    -webkit-transform: scale(0, 1);
+            transform: scale(0, 1);
+  }
+}
+@-webkit-keyframes bar-right {
+  0% {
+    -webkit-transform: scale(1, 0);
+            transform: scale(1, 0);
+  }
+  12.5% {
+    -webkit-transform: scale(1, 0);
+            transform: scale(1, 0);
+  }
+  25% {
+    -webkit-transform: scale(1, 1);
+            transform: scale(1, 1);
+  }
+  75% {
+    -webkit-transform: scale(1, 1);
+            transform: scale(1, 1);
+  }
+  87.5% {
+    -webkit-transform: scale(1, 0);
+            transform: scale(1, 0);
+  }
+  100% {
+    -webkit-transform: scale(1, 0);
+            transform: scale(1, 0);
+  }
+}
+@keyframes bar-right {
+  0% {
+    -webkit-transform: scale(1, 0);
+            transform: scale(1, 0);
+  }
+  12.5% {
+    -webkit-transform: scale(1, 0);
+            transform: scale(1, 0);
+  }
+  25% {
+    -webkit-transform: scale(1, 1);
+            transform: scale(1, 1);
+  }
+  75% {
+    -webkit-transform: scale(1, 1);
+            transform: scale(1, 1);
+  }
+  87.5% {
+    -webkit-transform: scale(1, 0);
+            transform: scale(1, 0);
+  }
+  100% {
+    -webkit-transform: scale(1, 0);
+            transform: scale(1, 0);
+  }
+}
+@-webkit-keyframes bar-bottom {
+  0% {
+    -webkit-transform: scale(0, 1);
+            transform: scale(0, 1);
+  }
+  25% {
+    -webkit-transform: scale(0, 1);
+            transform: scale(0, 1);
+  }
+  37.5% {
+    -webkit-transform: scale(1, 1);
+            transform: scale(1, 1);
+  }
+  62.5% {
+    -webkit-transform: scale(1, 1);
+            transform: scale(1, 1);
+  }
+  75% {
+    -webkit-transform: scale(0, 1);
+            transform: scale(0, 1);
+  }
+  100% {
+    -webkit-transform: scale(0, 1);
+            transform: scale(0, 1);
+  }
+}
+@keyframes bar-bottom {
+  0% {
+    -webkit-transform: scale(0, 1);
+            transform: scale(0, 1);
+  }
+  25% {
+    -webkit-transform: scale(0, 1);
+            transform: scale(0, 1);
+  }
+  37.5% {
+    -webkit-transform: scale(1, 1);
+            transform: scale(1, 1);
+  }
+  62.5% {
+    -webkit-transform: scale(1, 1);
+            transform: scale(1, 1);
+  }
+  75% {
+    -webkit-transform: scale(0, 1);
+            transform: scale(0, 1);
+  }
+  100% {
+    -webkit-transform: scale(0, 1);
+            transform: scale(0, 1);
+  }
+}
+@-webkit-keyframes bar-left {
+  0% {
+    -webkit-transform: scale(1, 0);
+            transform: scale(1, 0);
+  }
+  37.5% {
+    -webkit-transform: scale(1, 0);
+            transform: scale(1, 0);
+  }
+  50% {
+    -webkit-transform: scale(1, 1);
+            transform: scale(1, 1);
+  }
+  62.5% {
+    -webkit-transform: scale(1, 0);
+            transform: scale(1, 0);
+  }
+  100% {
+    -webkit-transform: scale(1, 0);
+            transform: scale(1, 0);
+  }
+}
+@keyframes bar-left {
+  0% {
+    -webkit-transform: scale(1, 0);
+            transform: scale(1, 0);
+  }
+  37.5% {
+    -webkit-transform: scale(1, 0);
+            transform: scale(1, 0);
+  }
+  50% {
+    -webkit-transform: scale(1, 1);
+            transform: scale(1, 1);
+  }
+  62.5% {
+    -webkit-transform: scale(1, 0);
+            transform: scale(1, 0);
+  }
+  100% {
+    -webkit-transform: scale(1, 0);
+            transform: scale(1, 0);
+  }
+}
+.spinner-eff.spinner-eff-4 .bar {
+  background-color: #FE4E00;
+}
+.spinner-eff.spinner-eff-4 .bar-top {
+  width: 100%;
+  height: 7px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-transform-origin: left top;
+          transform-origin: left top;
+  -webkit-transform: scale(0, 1);
+          transform: scale(0, 1);
+  -webkit-animation: bar-top 3.2s linear 0s infinite;
+          animation: bar-top 3.2s linear 0s infinite;
+}
+.spinner-eff.spinner-eff-4 .bar-right {
+  width: 7px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  -webkit-transform-origin: left top;
+          transform-origin: left top;
+  -webkit-transform: scale(1, 0);
+          transform: scale(1, 0);
+  -webkit-animation: bar-right 3.2s linear 0s infinite;
+          animation: bar-right 3.2s linear 0s infinite;
+}
+.spinner-eff.spinner-eff-4 .bar-bottom {
+  width: 100%;
+  height: 7px;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  -webkit-transform-origin: right top;
+          transform-origin: right top;
+  -webkit-transform: scale(0, 1);
+          transform: scale(0, 1);
+  -webkit-animation: bar-bottom 3.2s linear 0s infinite;
+          animation: bar-bottom 3.2s linear 0s infinite;
+}
+.spinner-eff.spinner-eff-4 .bar-left {
+  width: 7px;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  -webkit-transform-origin: left bottom;
+          transform-origin: left bottom;
+  -webkit-transform: scale(1, 0);
+          transform: scale(1, 0);
+  -webkit-animation: bar-left 3.2s linear 0s infinite;
+          animation: bar-left 3.2s linear 0s infinite;
+}

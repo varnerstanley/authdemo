@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="journal.css">
+    <title>261 Journal</title>
+  </head>
+  <body>
+    <div class="container">
+    <h1>261 Weekly Journal</h1>
+    <h2>Week 1</h2>
+    <p class="pText">This week I went over loops this reminded me of my first CS class at BYU Provo. I went over while loops, do while, and for loops. When I've done coding tutorials I really only see prople do for loops. Not many while or do while except when they have been teaching about it. I also learned about a foreach loop. It just automatically goes through each iteration without counting.</p>
+    <h2>Week 2</h2>
+    <p class="pText">This week I reviewed funcitons and if statements. Made a conditional guessing game that alerts in the browser. I also went over arrays and objects. When getting into objects and arrays I think that programming starts to make a lot more sense to me. I can think abstractly a lot easier. And accessing an objects attributes or properties is like magic. When I was learning C++ inheritance made a lot of sense to me. It's a bit different in javascript just how it works syntactically. Overall a good week.</p>
+    <h2>Week 3</h2>
+    <p class="pText">This week I learned about JSON Parse and using XMLHTTPRequests. I did do this in my CIT 230 class with a weather app. I've created a json file with json objects and stored it on the github web service. Probably one of the coolest things about web engineering is being able to take data from somewhere else and bring it on a site to show. Super amazing to see that. I am a bit frustrated though because I want to be a lot better at it already. Just have to be patient with the process.</p>
+    <h2>Week 4</h2>
+    <p class="pText">This week I learned about local storage. Storing and deleting data. This reminded me of when I had to learn PHP in my CIT 336 class. Man I like javascript a lot more than other languages. I don't know why, just do. Rant over. It was cool to build a button that would count how many times it had been clicked. Then close or refresh the window and it would start the count right where it left off. That is pretty amazing. It reminded me of data-binding in angularjs. I can see where that is useful and someways that most of the time you'll be acting with a database and not just the browser.</p>
+    <h2>Week 5</h2>
+    <p class="pText">This week I learned about DOM manipulation and about append child, insert, remove and creating an element. I used the create element to create an li to use the appendChild method. I did something similar to this in my fullstack class. Here is an example.</p>
+    <ul id="myList">
+      <li>Root beer</li>
+      <li>Lemonade</li>
+    </ul>
+    <button class="button" onclick="myFunction()">Append This List</button>
+
+    <script>
+    function myFunction() {
+        var node = document.createElement("LI");
+        var textnode = document.createTextNode("Water");
+        node.appendChild(textnode);
+        document.getElementById("myList").appendChild(node);
+    }
+    </script>
+    <h2>Week 6</h2>
+    <p class="pText">This week I learned about transitions with javascript. I made a menu that slided out. Also, did this curtain thing below here. This came at perfect timing since I'd be using this in another one of my classes. Click below.</p>
+    <!-- The parent component -->
+    <div class="curtain">
+
+      <!-- The component wrapper -->
+      <div class="curtain__wrapper">
+        <!-- The checkbox hack! -->
+        <input type="checkbox" checked>
+        <!-- The left curtain panel -->
+        <div class="curtain__panel curtain__panel--left">
+        </div> <!-- curtain__panel -->
+        <!-- The prize behind the curtain panels -->
+        <div class="curtain__prize">
+        </div> <!-- curtain__prize -->
+        <!-- The right curtain panel -->
+        <div class="curtain__panel curtain__panel--right">
+        </div> <!-- curtain__panel -->
+      </div> <!-- curtain__wrapper -->
+    </div> <!-- curtain -->
+    <h2>Week 7</h2>
+    <p class="pText">This week I learned more about animations. I've decided I'm going to do text and/or populate some thngs I've been learning about because I want to look back on these to remember what I did. </p>
+
+    <div id="str"></div>
+    <script type="text/javascript">
+    var string = "Hello I'm Stanley, I love building web apps.";
+    var str = string.split("");
+    var el = document.getElementById('str');
+    (function animate() {
+    str.length > 0 ? el.innerHTML += str.shift() : clearTimeout(running);
+    var running = setTimeout(animate, 90);
+    })();
+    </script>
+    <h2>Week 8</h2>
+    <p class="pText">This week I learned about manipulating CSS properties using javascript. You can use the className to change a css class. Like this below. It goes from one class to the other.</p>
+    <div class="box boxdiv" onclick="zoom(this)">Click here for zoom.</div>
+    <script type="text/javascript">
+    function zoom(content){
+      if(content.className == "box"){
+        content.className = "zoomBox";
+      } else {
+        content.className = "box";
+      }
+      }
+    </script>
+    <h2>Week 9</h2>
+    <p class="pText">This week I learned about adding video, audio, and canvas to html pages. This is really cool because I was able to put a video file in the same folder and use that instead of just embedding it from youtube.</p>
+    <video width="400" controls>
+      <source src="DB SA Shoulder Press.mp4" type="video/mp4">
+      <source src="DB SA Shoulder Press.mp4" type="video/ogg">
+      Your browser does not support HTML5 video.
+    </video>
+    <audio controls>
+    <source src="horse.ogg" type="audio/ogg">
+    <source src="horse.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+    </audio>
+
+    <h2>Week 10</h2>
+    <p class="pText">This week I learned about CSS transitions, transform, and animations. This one was a little bit difficult to understand how it should be done. I was thinking without javascript was the difference from the earlier topic.</p>
+    <div class="spinner-block">
+      <div class="spinner-eff spinner-eff-4">
+        <div class="bar bar-top"></div>
+        <div class="bar bar-right"></div>
+        <div class="bar bar-bottom"></div>
+        <div class="bar bar-left"></div>
+      </div>
+      <div class="container container-one"> <div class="orbiting-circle"></div>
+      </div>
+    </div>
+    <h2>Week 11</h2>
+    <p class="pText">This week moving into figuring out what I'm going to do for a web app. I have no idea. I spent hours trying to make a macro calculator for doing something fitness related. I got it working for the most part. But I couldn't get access to a good api for an app that tracks macros. Myfitnesspal only lets certain people access theres. So still not sure what I am doing.</p>
+    <h2>Week 12</h2>
+    <p class="pText">I think I've made some good progress with my web app. I decided to do a financial coaching/resource web app. I got api data to show the current bitcoin price. I have been super interested in crypto currencies and thought it would be a good touch. I've added an interest calculater to count interest. Going to keep working on other ideas.</p>
+    <h2>Week 13</h2>
+    <p class="pText">This week I've been working on my web app. I'd like to make this into a real resource one day that I can help do financial coaching with. I've added a mortgage calculator which I think is really helpful so you can see what your interest would be. Ridiculous to borrow that much money and not pay it off ASAP in my opinion.</p>
+    <h2>Week 14</h2>
+    <p class="pText">My last entry, I have finished my web app. I have a goal setter on there, interest and mortgage calculations and an api that shows the current price of bitcoin. With a sweet animation on it. I've added animation to some of the buttons as well. I added videos that are a good resource for people to see. Overtime I will keep developing this web app. I have some more ideas on how to make it even better. The goals need to be saved in a database and so that people could map out goals for each week and check them off based on the debt they have. I think having clarity like that would really help.</p>
+    </div>
+  </body>
+</html>
